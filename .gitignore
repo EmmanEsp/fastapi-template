@@ -1,7 +1,8 @@
 __pycache__/
 .pytest_cache/
 
-.vscode
+.vscode/
 .DS_Store
 
 .env
+db-data/

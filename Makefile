@@ -4,3 +4,12 @@ up:
 
 down:
 	docker-compose down
+
+create-migration:
+	docker-compose run --rm migration dbmate new ${NAME}
+
+migrate-up:
+	docker-compose run --rm migration dbmate -e "DATABASE_URL" -d "./db/migrations" up
+
+migrate-down:
+	docker-compose run --rm migration dbmate -e "DATABASE_URL" -d "./db/migrations" down
