@@ -13,3 +13,9 @@ migrate-up:
 
 migrate-down:
 	docker-compose run --rm migration dbmate -e "DATABASE_URL" -d "./db/migrations" down
+
+test:
+	poetry run coverage run -m pytest
+
+test-report:
+	poetry run coverage report
