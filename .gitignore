@@ -8,3 +8,4 @@ __pycache__/
 db-data/
 
 interrogate_badge.svg
+.coverage
